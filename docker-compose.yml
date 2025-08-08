@@ -1,0 +1,9 @@
+services:
+  hotel-recommender:
+    build: .
+    container_name: hotel-recommender
+    ports:
+      - "8000:8000"
+    env_file: .env
+    restart: unless-stopped
+    network_mode: host
