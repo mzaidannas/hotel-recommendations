@@ -1,7 +1,0 @@
-services:
-  hotel-recommender:
-    build: .
-    container_name: hotel-recommender
-    ports:
-      - "8000:8000"
-    restart: unless-stopped
