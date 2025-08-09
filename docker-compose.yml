@@ -7,4 +7,8 @@ services:
       - GOOGLE_MAPS_API_KEY=${GOOGLE_MAPS_API_KEY}
     ports:
       - "8000:8000"
+    labels:
+      - "traefik.http.routers.hotelrecommender-mcp-sjaewn-1-web.middlewares=ws-headers"
+      - "traefik.http.middlewares.ws-headers.headers.customrequestheaders.Upgrade=websocket"
+      - "traefik.http.middlewares.ws-headers.headers.customrequestheaders.Connection=Upgrade"
     restart: unless-stopped
