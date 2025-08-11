@@ -25,7 +25,7 @@ MCP Server config
   "mcp-servers": {
     "hotel-recommendations-mcp": {
       "command": "npx",
-      "args": ["mcp-remote", "http://localhost:8000/sse"]
+      "args": ["mcp-remote", "http://localhost:8000/mcp"]
     }
   }
 }
