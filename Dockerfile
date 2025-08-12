@@ -45,4 +45,4 @@ WORKDIR /app
 EXPOSE 8000
 
 # Run app
-CMD ["fastmcp", "run", "app/main.py", "--transport", "streamable-http", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["fastmcp", "run", "app/main.py", "--transport", "streamable-http", "--host", "0.0.0.0", "--port", "8000", "--path", "/mcp"]

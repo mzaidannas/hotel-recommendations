@@ -1,6 +1,7 @@
 services:
   hotel-recommender:
     build: .
+    image: hotel-recommender:latest
     container_name: hotel-recommender
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
